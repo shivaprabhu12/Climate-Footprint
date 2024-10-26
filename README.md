@@ -1,30 +1,36 @@
-# Climate-Footprint
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-This chat application, named "Llama," enables users to engage in conversations about their lifestyle choices and receive feedback on their environmental impact. Users can ask questions related to various aspects of their daily lives, such as transportation, energy consumption, and dietary habits.
-Features
-User Interaction: Users can type messages to inquire about how specific lifestyle choices affect climate change.
-Bot Responses: The bot provides tailored responses based on user input, offering insights and suggestions for reducing their carbon footprint.
-Real-Time Chat: The application supports real-time messaging, ensuring a smooth conversational experience.
-Loading Indicators: Users are informed when the bot is processing their queries.
-Implementation Steps
-1. Setting Up the Environment
-Ensure that you have Node.js and npm installed.
-Create a new React app using Create React App or your preferred setup.
-2. Building the Chat Interface
-Create a ChatPage component that includes:
-State Management: Use React hooks (useState, useEffect) to manage messages, input text, and loading states.
-Message Structure: Define a Message type to represent messages sent by users and the bot.
-3. Handling User Input
-Implement a form for users to submit their question.
+## Getting Started
 
-4. API Integration
-Set up an API endpoint (/api/chat) that processes user messages and returns relevant information about climate impact based on user inputs. This could involve:
-Analyzing transportation habits (e.g., car vs. public transport).
-Evaluating energy consumption patterns (e.g., electricity usage).
-Providing dietary advice (e.g., plant-based vs. meat-heavy diets).
-5. User Feedback Loop
-Encourage users to ask follow-up questions or provide feedback on the suggestions given by the bot. This can help refine the responses and improve user engagement.
-Example Interaction
-User types: "How does driving my car affect my carbon footprint?"
-Bot responds with an analysis of emissions from car usage compared to public transport options.
-User can ask for tips on reducing their carbon footprint.
+First, run the development server:
+
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+
+## Learn More
+
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
