@@ -15,30 +15,7 @@ Create a ChatPage component that includes:
 State Management: Use React hooks (useState, useEffect) to manage messages, input text, and loading states.
 Message Structure: Define a Message type to represent messages sent by users and the bot.
 3. Handling User Input
-Implement a form for users to submit their questions:
-javascript
-const handleSubmit = async (e) => {
-  e.preventDefault();
-  if (!input.trim()) return;
-
-  const userMessage = { id: Date.now(), sender: "user", text: input.trim() };
-  setMessages((prev) => [...prev, userMessage]);
-  setInput("");
-  setLoading(true);
-
-  // Fetch response from API
-  const response = await fetch("/api/chat", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ message: userMessage.text }),
-  });
-  
-  const data = await response.json();
-  const botMessage = { id: Date.now() + 1, sender: "bot", text: data.response || "Something went wrong" };
-  
-  setMessages((prev) => [...prev, botMessage]);
-  setLoading(false);
-};
+Implement a form for users to submit their question.
 
 4. API Integration
 Set up an API endpoint (/api/chat) that processes user messages and returns relevant information about climate impact based on user inputs. This could involve:
